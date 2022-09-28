@@ -20,7 +20,7 @@ script:
   
   - docker tag udagram-api-feed shayhun/udagram-api-feed:v1
   - docker tag udagram-api-user shayhun/udagram-api-user:v2
-  - docker tag udagram-frontend shayhun/udagram-frontend:v3
+  - docker tag udagram-frontend:local shayhun/udagram-frontend:v3
   - docker tag reverseproxy shayhun/reverseproxy:v4
 
 
