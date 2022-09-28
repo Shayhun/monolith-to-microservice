@@ -26,8 +26,7 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push YOUR_DOCKER_HUB/simple-node
-  - docker push shayhun/udagram-api-feed:v1
+    - docker push shayhun/udagram-api-feed:v1
   - docker push shayhun/udagram-api-user:v2
   - docker push shayhun/udagram-frontend:v3
   - docker push shayhun/reverseproxy:v4
